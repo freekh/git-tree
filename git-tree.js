@@ -529,7 +529,7 @@ module.exports = function (platform) {
     var repo = repos[path];
     if (repo) return repo;
     var config = configs[path];
-    if (!config) throw new Error("No repo at " + JSON.srtingify(path));
+    if (!config) throw new Error("No repo at " + JSON.stringify(path));
     repo = repos[path] = platform.createRepo(config);
     return repo;
   }
